@@ -33,3 +33,15 @@ function toggleMenu() {
 
     menu.classList.toggle('aberto');
 }
+
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('menu');
+    const btnMenu = document.getElementById('botao-mobile');
+
+    if (menu.classList.contains('aberto') && 
+        !menu.contains(event.target) && 
+        !btnMenu.contains(event.target)) {
+        
+        menu.classList.remove('aberto');
+    }
+});

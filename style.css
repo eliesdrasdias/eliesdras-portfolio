@@ -301,7 +301,8 @@ footer {
 
     #menu .menu {
         flex-direction: column;
-        width: 100%; 
+        width: 100%;
+        gap: 5px;
     }
 
     #menu.aberto {
