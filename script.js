@@ -27,3 +27,9 @@ function applyTheme(theme) {
         themeIcon.className = 'fa-solid fa-sun'; 
     }
 }
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+
+    menu.classList.toggle('aberto');
+}

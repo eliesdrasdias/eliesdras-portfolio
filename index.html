@@ -20,21 +20,25 @@
 <body>
 
     <header>
-        <div class="container header-content">
+        <div class="header-content">
             <div class="logo">Eliesdras<span class="ponto-destaque">.</span>Dias</div>
 
-            <nav>
-                <ul class="menu">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li>
-                        <button id="theme-toggle" aria-label="Alternar Tema">
-                            <i class="fa-solid fa-moon"></i>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header-actions">
+
+                <nav id="menu">
+                    <ul class="menu">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                    </ul>
+                </nav>
+
+                <button id="theme-toggle" aria-label="Alternar Tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button id="botao-mobile" onclick="toggleMenu()">☰</button>
+            </div>
         </div>
     </header>
 
