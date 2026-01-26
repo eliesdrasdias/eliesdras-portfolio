@@ -67,6 +67,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -296,7 +298,7 @@ footer {
         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
         border-bottom: 2px solid var(--brand-color);
         z-index: 1000;
-        padding: 20px 20px 20px 0;
+        padding: 20px 5% 20px 0;
     }
 
     #menu .menu {
