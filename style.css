@@ -211,10 +211,14 @@ h2::after {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-.link-card {
+.link-card,
+.link-card:visited,
+.link-card:hover,
+.link-card:active {
     text-decoration: none;
     color: inherit;
     display: block;
+    cursor: pointer;
 }
 
 .projeto-card {
