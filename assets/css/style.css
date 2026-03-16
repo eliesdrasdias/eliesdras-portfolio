@@ -217,38 +217,85 @@ h2::after {
 .link-card:active {
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    height: 100%;
     cursor: pointer;
 }
 
+.img-projeto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.projeto-card:hover .img-projeto {
+    transform: scale(1.05);
+}
 .projeto-card {
     background-color: var(--bg-card);
-    padding: 30px;
+    padding: 0;
     border-radius: 12px;
     border: 1px solid var(--border);
     transition: 0.3s;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
+.projeto-card p {
+    flex-grow: 1; 
+    margin-bottom: 20px;
+}
+
 .projeto-card:hover { transform: translateY(-5px); border-color: var(--brand-color); }
 
 .projeto-card.destaque { border-left: 4px solid var(--brand-color); }
 
 .card-header {
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.03);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
 }
 
 .tag {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    color: var(--brand-color);
+    font-weight: 700;
+    background-color: rgba(255, 159, 28, 0.08);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 159, 28, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+}
+
+.card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card-body h3 {
+    margin-bottom: 15px;
+}
+.card-body p {
+    flex-grow: 1;
+    font-size: 0.9rem;
     color: var(--text-muted);
-    border: 1px solid var(--border);
-    padding: 4px 10px;
-    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .icone-projeto { font-size: 1.5rem; color: var(--brand-color); }
