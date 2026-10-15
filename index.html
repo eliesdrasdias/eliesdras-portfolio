@@ -1,156 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Eliesdras Dias - Desenvolvedor Back-end">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Eliesdras Dias - Desenvolvedor Back-end"
+    />
     <title>Eliesdras Dias | Desenvolvedor Fullstack</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="header-content">
-            <div class="logo">Eliesdras<span class="ponto-destaque">.</span>Dias</div>
-
-            <div class="header-actions">
-
-                <nav id="menu">
-                    <ul class="menu">
-                        <li><a href="#hero" onclick="toggleMenu()">Início</a></li>
-                        <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
-                        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                        <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
-                    </ul>
-                </nav>
-
-                <button id="theme-toggle" aria-label="Alternar Tema">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-
-                <button id="botao-mobile" onclick="toggleMenu()">☰</button>
-            </div>
+      <div class="header-content">
+        <div class="logo">
+          Eliesdras<span class="ponto-destaque">.</span>Dias
         </div>
+
+        <div class="header-actions">
+          <nav id="menu">
+            <ul class="menu">
+              <li><a href="#hero" onclick="toggleMenu()">Início</a></li>
+              <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+              <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+              <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+            </ul>
+          </nav>
+
+          <button id="theme-toggle" aria-label="Alternar Tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button id="botao-mobile" onclick="toggleMenu()">☰</button>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="container hero-content">
-                <span class="badge">Disponível para novos projetos</span>
-                <h1>Eliesdras Dias</h1>
-                <p class="subtitulo">Desenvolvedor Fullstack</p>
-                <div class="botoes-hero">
-                    <a href="#projetos" class="btn-primary">Projetos</a>
-                    <a href="#contato" class="btn-secondary">Contato</a>
+      <section id="hero">
+        <div class="container hero-content">
+          <span class="badge">Disponível para novos projetos</span>
+          <h1>Eliesdras Dias</h1>
+          <p class="subtitulo">Desenvolvedor Fullstack</p>
+          <div class="botoes-hero">
+            <a href="#projetos" class="btn-primary">Projetos</a>
+            <a href="#contato" class="btn-secondary">Contato</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <div class="container">
+          <h2>Sobre Mim</h2>
+          <article class="sobre-texto">
+            <p>
+              Desenvolvo software com foco em resolver problemas reais. Como
+              Desenvolvedor Fullstack, atuo em todo o ciclo de vida das
+              aplicações. No backend, crio APIs REST seguras e preparadas para
+              crescer utilizando Node.js, Golang e TypeScript, sempre
+              priorizando uma arquitetura limpa. No frontend, garanto que toda
+              essa robustez se traduza em interfaces dinâmicas e responsivas.
+              Mais do que apenas escrever código, meu objetivo é integrar
+              performance técnica com uma experiência de uso excepcional.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>Minhas Ferramentas</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-nodejs-plain colored"></i>
+              <p>Node.js</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-go-plain colored"></i>
+              <p>Golang</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-typescript-plain colored"></i>
+              <p>TypeScript</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-postgresql-plain colored"></i>
+              <p>PostgreSQL</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-docker-plain colored"></i>
+              <p>Docker</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-react-plain colored"></i>
+              <p>React</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <div class="container">
+          <h2>Laboratório & Projetos</h2>
+          <div class="projetos-grid">
+            <!-- projeto-bistro-marajo -->
+            <article class="projeto-card destaque">
+              <div class="card-header"></div>
+              <div class="card-image-container">
+                <img
+                  src="assets/img/thumb-bistro.png"
+                  alt="Prévia do site Bistrô Marajó"
+                  class="img-projeto"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Bistrô Marajó</h3>
+                <p>
+                  Aplicação para resolver um problema real de negócio local,
+                  substituindo o cardápio de whatsapp por um catálogo
+                  interativo.
+                </p>
+                <div class="tech-tags">
+                  <span>Node.js</span><span>TypeScript</span
+                  ><span>API REST</span><span>Front-end HTML/CSS</span>
                 </div>
-            </div>
-        </section>
-
-        <section id="sobre">
-            <div class="container">
-                <h2>Sobre Mim</h2>
-                <article class="sobre-texto">
-                    <p>
-                        Desenvolvedor Fullstack focado em projetar e construir aplicações de ponta a ponta. Tenho forte atuação no desenvolvimento de APIs REST escaláveis e seguras utilizando Node.js, Golang e TypeScript, sempre aplicando princípios de arquitetura limpa e modelagem de dados estruturada. No frontend, desenvolvo interfaces dinâmicas e responsivas, garantindo uma integração eficiente que oferece a melhor experiência para o usuário final. Meu foco é entregar código limpo e soluções tecnológicas de alto desempenho.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section id="skills">
-            <div class="container">
-                <h2>Minhas Ferramentas</h2>
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <i class="devicon-nodejs-plain colored"></i>
-                        <p>Node.js</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="devicon-go-plain colored"></i>
-                        <p>Golang</p>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <i class="devicon-typescript-plain colored"></i>
-                        <p>TypeScript</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="devicon-postgresql-plain colored"></i>
-                        <p>PostgreSQL</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="devicon-docker-plain colored"></i>
-                        <p>Docker</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <i class="devicon-html5-plain colored"></i>
-                        <p>HTML5</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="devicon-css3-plain colored"></i>
-                        <p>CSS3</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="devicon-git-plain colored"></i>
-                        <p>Git</p>
-                    </div>
-
+                <div class="card-actions">
+                  <a
+                    href="https://eliesdrasdias.github.io/bistro-marajo/"
+                    target="_blank"
+                    class="btn-primary"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/eliesdrasdias/bistro-marajo"
+                    target="_blank"
+                    class="btn-secondary"
+                    >Ver Código</a
+                  >
                 </div>
-            </div>
-        </section>
+              </div>
+            </article>
 
-        <section id="projetos">
-            <div class="container">
-                <h2>Laboratório & Projetos</h2>
-                <div class="projetos-grid">
+            <!-- projeto-ChessLive-Hub -->
+            <article class="projeto-card">
+              <div class="card-header"></div>
+              <div class="card-image-container">
+                <img
+                  src="assets/img/thumb-chesslive.png"
+                  alt="Prévia do site ChessLive-Hub"
+                  class="img-projeto"
+                />
+              </div>
+              <div class="card-body">
+                <h3>ChessLive Hub</h3>
+                <p>
+                  Uma plataforma que centraliza transmissões ao vivo de xadrez
+                  em um só lugar.
+                </p>
+                <div class="tech-tags">
+                  <span>React</span>
+                  <span>Vite</span>
+                  <span>TypeScript</span>
+                </div>
+                <div class="card-actions">
+                  <a
+                    href="https://eliesdrasdias.github.io/ChessLive-Hub/"
+                    target="_blank"
+                    class="btn-primary"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/eliesdrasdias/ChessLive-Hub"
+                    target="_blank"
+                    class="btn-secondary"
+                    >Ver Código</a
+                  >
+                </div>
+              </div>
+            </article>
 
-                    <!-- projeto-bistro-marajo -->
-                    <article class="projeto-card destaque">
-                        <div class="card-header">
-                        </div>
-                        <div class="card-image-container">
-                            <img src="assets/img/thumb-bistro.png" alt="Prévia do site Bistrô Marajó"
-                                class="img-projeto">
-                        </div>
-                        <div class="card-body">
-                            <h3>Bistrô Marajó | Sistema de Cardápio Dinâmico</h3>
-                            <p>Aplicação para resolver um problema real de negócio local, substituindo o cardápio de whatsapp por um catálogo interativo.</p>
-                            <div class="tech-tags">
-                                <span>Node.js</span><span>TypeScript</span><span>API REST</span><span>Front-end HTML/CSS</span>
-                            </div>
-                            <div class="card-actions">
-                                <a href="https://eliesdrasdias.github.io/bistro-marajo/" target="_blank"
-                                    class="btn-primary">Ver Projeto</a>
-                                <a href="https://github.com/eliesdrasdias/bistro-marajo" target="_blank"
-                                    class="btn-secondary">Ver Código</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- escopo pŕoximo projeto -->
-                    <!--<article class="projeto-card">
+            <!-- escopo pŕoximo projeto -->
+            <!--<article class="projeto-card">
                         <div class="card-header">
                         </div>
                         <div class="card-image-container">
@@ -170,31 +223,42 @@
                             </div>
                         </div>
                     </article> -->
-
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="contato">
-        <div class="container footer-content">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/eliesdras/" target="_blank" aria-label="LinkedIn">
-                    <i class="devicon-linkedin-plain"></i>
-                </a>
-                <a href="https://github.com/eliesdrasdias" target="_blank" aria-label="GitHub">
-                    <i class="devicon-github-original"></i>
-                </a>
-                <a href="mailto:eliesdras.diasferreira@gmail.com" aria-label="Email"
-                    title="eliesdras.diasferreira@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
-            <p>&copy; 2026 Eliesdras Dias. Desenvolvido com identidade Amazônica.</p>
+      <div class="container footer-content">
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/eliesdras/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+          <a
+            href="https://github.com/eliesdrasdias"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="devicon-github-original"></i>
+          </a>
+          <a
+            href="mailto:eliesdras.diasferreira@gmail.com"
+            aria-label="Email"
+            title="eliesdras.diasferreira@gmail.com"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
+        <p>
+          &copy; 2026 Eliesdras Dias. Desenvolvido com identidade Amazônica.
+        </p>
+      </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
