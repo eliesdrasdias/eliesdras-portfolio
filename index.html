@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfólio de Eliesdras Dias - Desenvolvedor Back-end"
+      content="Portfólio de Eliesdras Dias, Desenvolvedor Full Stack. Conheça meus projetos e tecnologias."
     />
-    <title>Eliesdras Dias | Desenvolvedor Fullstack</title>
+    <title>Eliesdras Dias | Desenvolvedor Full Stack</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -36,12 +36,12 @@
         </div>
 
         <div class="header-actions">
-          <nav id="menu">
+          <nav id="menu" aria-label="Navegação principal">
             <ul class="menu">
-              <li><a href="#hero" onclick="toggleMenu()">Início</a></li>
-              <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
-              <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-              <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+              <li><a href="#hero">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projetos">Projetos</a></li>
             </ul>
           </nav>
 
@@ -49,7 +49,15 @@
             <i class="fa-solid fa-moon"></i>
           </button>
 
-          <button id="botao-mobile" onclick="toggleMenu()">☰</button>
+          <button
+            id="botao-mobile"
+            type="button"
+            aria-label="Abrir menu"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true">☰</span>
+          </button>
         </div>
       </div>
     </header>
@@ -59,7 +67,7 @@
         <div class="container hero-content">
           <span class="badge">Disponível para novos projetos</span>
           <h1>Eliesdras Dias</h1>
-          <p class="subtitulo">Desenvolvedor Fullstack</p>
+          <p class="subtitulo">Desenvolvedor Full Stack</p>
           <div class="botoes-hero">
             <a href="#projetos" class="btn-primary">Projetos</a>
             <a href="#contato" class="btn-secondary">Contato</a>
@@ -72,14 +80,12 @@
           <h2>Sobre Mim</h2>
           <article class="sobre-texto">
             <p>
-              Desenvolvo software com foco em resolver problemas reais. Como
-              Desenvolvedor Fullstack, atuo em todo o ciclo de vida das
-              aplicações. No backend, crio APIs REST seguras e preparadas para
-              crescer utilizando Node.js, Golang e TypeScript, sempre
-              priorizando uma arquitetura limpa. No frontend, garanto que toda
-              essa robustez se traduza em interfaces dinâmicas e responsivas.
-              Mais do que apenas escrever código, meu objetivo é integrar
-              performance técnica com uma experiência de uso excepcional.
+              Sou Desenvolvedor Full Stack e construo aplicações web do
+              backend ao frontend. Trabalho com Node.js e TypeScript no
+              desenvolvimento de APIs REST, e com React, HTML e CSS na criação
+              de interfaces responsivas. Também utilizo PostgreSQL e Docker
+              nos projetos, buscando entregar soluções úteis, bem estruturadas
+              e fáceis de usar.
             </p>
           </article>
         </div>
@@ -134,24 +140,27 @@
               <div class="card-body">
                 <h3>Bistrô Marajó</h3>
                 <p>
-                  Aplicação para resolver um problema real de negócio local,
-                  substituindo o cardápio de whatsapp por um catálogo
-                  interativo.
+                  Protótipo de cardápio digital para um restaurante com menu
+                  diário. A proposta é permitir que o responsável atualize os
+                  pratos por um painel administrativo. No momento, o projeto
+                  conta com a interface em HTML, CSS e JavaScript; o painel e
+                  o backend ainda estão em planejamento.
                 </p>
                 <div class="tech-tags">
-                  <span>Node.js</span><span>TypeScript</span
-                  ><span>API REST</span><span>Front-end HTML/CSS</span>
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
                 </div>
                 <div class="card-actions">
                   <a
                     href="https://eliesdrasdias.github.io/bistro-marajo/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn-primary"
                     >Ver Projeto</a
                   >
                   <a
                     href="https://github.com/eliesdrasdias/bistro-marajo"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn-secondary"
                     >Ver Código</a
                   >
@@ -172,9 +181,10 @@
               <div class="card-body">
                 <h3>Chat Offline</h3>
                 <p>
-                  Aplicação de chat offline para múltiplas conversas. O sistema
-                  permite ao usuário alternar o controle das mensagens entre
-                  perfis de humano e robô.
+                  Protótipo simples de chat em que o usuário alterna entre
+                  escrever como pessoa e responder como robô. Desenvolvido
+                  como projeto pessoal para praticar a construção de uma
+                  interface interativa.
                 </p>
                 <div class="tech-tags">
                   <span>React</span>
@@ -185,12 +195,14 @@
                   <a
                     href="https://chat-offline.eliesdras.dev.br/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn-primary"
                     >Ver Projeto</a
                   >
                   <a
                     href="https://github.com/eliesdrasdias/Chat-Offline"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn-secondary"
                     >Ver Código</a
                   >
@@ -212,9 +224,9 @@
                                 <span></span>
                             </div>
                             <div class="card-actions">
-                                <a href="Deployment URL" target="_blank"
+                                <a href="Deployment URL" target="_blank" rel="noopener noreferrer"
                                     class="btn-primary">Ver Projeto</a>
-                                <a href="GitHub URL" target="_blank"
+                                <a href="GitHub URL" target="_blank" rel="noopener noreferrer"
                                     class="btn-secondary">Ver Código</a>
                             </div>
                         </div>
@@ -230,6 +242,7 @@
           <a
             href="https://www.linkedin.com/in/eliesdras/"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
             <i class="devicon-linkedin-plain"></i>
@@ -237,6 +250,7 @@
           <a
             href="https://github.com/eliesdrasdias"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="GitHub"
           >
             <i class="devicon-github-original"></i>

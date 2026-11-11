@@ -28,20 +28,43 @@ function applyTheme(theme) {
     }
 }
 
-function toggleMenu() {
-    const menu = document.getElementById('menu');
+const menu = document.getElementById('menu');
+const menuButton = document.getElementById('botao-mobile');
+const menuLinks = menu.querySelectorAll('a');
+const mobileMenuQuery = window.matchMedia('(max-width: 768px)');
 
-    menu.classList.toggle('aberto');
+function setMenuOpen(isOpen) {
+    menu.classList.toggle('aberto', isOpen);
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
 }
 
-document.addEventListener('click', function(event) {
-    const menu = document.getElementById('menu');
-    const btnMenu = document.getElementById('botao-mobile');
+menuButton.addEventListener('click', () => {
+    const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+    setMenuOpen(!isOpen);
+});
 
-    if (menu.classList.contains('aberto') && 
-        !menu.contains(event.target) && 
-        !btnMenu.contains(event.target)) {
-        
-        menu.classList.remove('aberto');
+menuLinks.forEach((link) => {
+    link.addEventListener('click', () => setMenuOpen(false));
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+        setMenuOpen(false);
+        menuButton.focus();
     }
+});
+
+document.addEventListener('click', (event) => {
+    if (
+        menuButton.getAttribute('aria-expanded') === 'true' &&
+        !menu.contains(event.target) &&
+        !menuButton.contains(event.target)
+    ) {
+        setMenuOpen(false);
+    }
+});
+
+mobileMenuQuery.addEventListener('change', (event) => {
+    if (!event.matches) setMenuOpen(false);
 });
