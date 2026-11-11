@@ -5,6 +5,8 @@
     --text-muted: #cbd5e1;      
     --brand-color: #ff9f1c;     
     --brand-hover: #ffb74d;     
+    --brand-tint: rgba(255, 159, 28, 0.12);
+    --button-text: #1a0b2e;
     --border: rgba(255, 255, 255, 0.1);
     
     --header-height: 80px;
@@ -15,9 +17,11 @@
     --bg-body: #f8f9fa;         
     --bg-card: #ffffff;         
     --text-main: #1e293b;       
-    --text-muted: #64748b;      
-    --brand-color: #e65100;     
-    --brand-hover: #ff6d00;
+    --text-muted: #475569;
+    --brand-color: #c2410c;
+    --brand-hover: #9a3412;
+    --brand-tint: rgba(194, 65, 12, 0.08);
+    --button-text: #ffffff;
     --border: rgba(0, 0, 0, 0.1);
     --bg-header: rgba(248, 249, 250, 0.95);
 }
@@ -108,7 +112,7 @@ header {
 /* Botão Tema */
 #theme-toggle {
     background: none;
-    border: 1px solid var(--border);
+    border: 1px solid var(--text-muted);
     color: var(--text-main);
     cursor: pointer;
     padding: 8px 12px;
@@ -150,7 +154,7 @@ h2::after {
 }
 
 .badge {
-    background-color: rgba(255, 159, 28, 0.2); 
+    background-color: var(--brand-tint);
     color: var(--brand-color);
     padding: 5px 15px;
     border-radius: 20px;
@@ -190,12 +194,12 @@ h2::after {
 
 .btn-primary {
     background-color: var(--brand-color);
-    color: #1a0b2e; 
+    color: var(--button-text);
 }
 .btn-primary:hover { transform: translateY(-3px); background-color: var(--brand-hover); }
 
 .btn-secondary {
-    border: 2px solid var(--border);
+    border: 2px solid var(--text-muted);
     color: var(--text-main);
 }
 .btn-secondary:hover { border-color: var(--brand-color); color: var(--brand-color); }
@@ -284,9 +288,9 @@ h2::after {
     letter-spacing: 1.5px;
     color: var(--brand-color);
     font-weight: 700;
-    background-color: rgba(255, 159, 28, 0.08);
+    background-color: var(--brand-tint);
     backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 159, 28, 0.3);
+    border: 1px solid var(--brand-color);
     padding: 6px 16px;
     border-radius: 20px;
 }
@@ -325,7 +329,7 @@ h2::after {
 }
 .tech-tags span {
     font-size: 0.8rem;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.08);
     padding: 5px 10px;
     border-radius: 4px;
     color: var(--text-muted);
@@ -348,7 +352,7 @@ h2::after {
     font-size: 15px;
 }
 
-[data-theme="light"] .tech-tags span { background-color: rgba(0,0,0,0.05); }
+[data-theme="light"] .tech-tags span { background-color: #f1f5f9; }
 
 footer {
     padding: 50px 0;
