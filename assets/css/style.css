@@ -465,8 +465,14 @@ footer {
 .social-links a { color: var(--text-muted); transition: 0.3s; }
 .social-links a:hover { color: var(--brand-color); }
 .email-contato { margin-bottom: 20px; }
-.email-contato a { color: var(--text-muted); }
-.email-contato a:hover { color: var(--brand-color); }
+.email-contato a,
+.email-contato a:link,
+.email-contato a:visited {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+.email-contato a:hover,
+.email-contato a:focus-visible { color: var(--brand-color); }
 
 #botao-mobile {
     display: none;
